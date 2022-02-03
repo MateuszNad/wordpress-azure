@@ -21,6 +21,7 @@
 
 //Using environment variables for DB connection information
 
+
 $connectstr_dbhost = '';
 $connectstr_dbname = '';
 $connectstr_dbusername = '';
@@ -57,7 +58,7 @@ define('DB_CHARSET', 'utf8');
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
 
-
+define('WP_ALLOW_REPAIR', true)
 
 /** Enabling support for connecting external MYSQL over SSL*/
 $mysql_sslconnect = (getenv('DB_SSL_CONNECTION')) ? getenv('DB_SSL_CONNECTION') : 'true';
